@@ -61,11 +61,7 @@ export const theme: DefaultTheme = {
     paddingBig: "30px",
     paddingExtraBig: "40px",
     paddingMegaBig: "45px",
-  },
-  fonts: {
-    body: "Arial, sans-serif",
-    heading: "Georgia, serif",
-  },
+  }
 };
 
 export default theme;
