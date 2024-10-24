@@ -1,42 +1,83 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+:root { /* Global variables for use in the app */
+  /*Background Color*/
+  --light-purple: rgb(192, 132, 252);
+  --pink: rgb(236, 72, 153);
+  --red: rgb(239, 68, 68);
+  --white:rgb(255, 255, 255);
+  --light-grey-tab: rgb(243, 244, 246);
+  --light-grey-buttons:rgb(229, 231, 235);
+
+  /*Text Color*/
+  --dark-black:rgb(31, 41, 55);
+  --medium-grey: rgb(75, 85, 99);
+  --light-grey-text: rgb(107, 114, 128);
+
+  /*Accent & Button Colors*/
+
+  /*Vacancies*/
+  --purple-vacancies: rgb(168, 85, 247);
+  --hover-vacancies:rgb(147, 51, 234);
+
+  /*Companies*/
+  --pink-companies:rgb(236, 72, 153);
+  --hover-companies: rgb(219, 39, 119);
+
+  /*Delete Buttons*/
+  --red-text: rgb(239, 68, 68);
+  --hover-text:rgb(220, 38, 38);
+  --hover-background: rgb(254, 242, 242);
+
+  /*Border & Focus*/
+  --grey-border: rgb(229, 231, 235);
+  --purple-focus:rgb(233, 213, 255);
+  --pink-focus:rgb(251, 207, 232);
+
+
+  --border-radius-min: 10px;
+  --border-radius-medium: 20px;
+  --border-radius-big: 30px;
+  --padding-min: 10px;
+  --padding-medium: 20px;
+  --padding-big: 30px;
+  --padding-extra-big: 40px;
+  --padding-mega-big: 45px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
+html {
+  box-sizing: border-box;
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  /* border: 1px solid red; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; /* Format the margin and padding of the element */
+  font-family: var(--main-font);
+}
+
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
+  overflow: hidden;
+  font-family: var(--main-font);
+  min-height: 100vh;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+  padding: 0;
 }
